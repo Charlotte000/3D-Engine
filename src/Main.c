@@ -8,9 +8,9 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-const int W = 211;  // 120;
-const int H = 52;   // 30;
-const bool COLOR_MODE = false;
+const int W = 120;
+const int H = 30;
+const bool COLOR_MODE = true;
 Vector LIGHT = { 0, 0, 1 };
 
 int main()
@@ -38,7 +38,7 @@ int main()
 	Vector* points;
 	int** surfaces;
 
-	initCube(&points, &pointsLen , &surfaces, &surfacesLen, 2);
+	initCube(&points, &pointsLen, &surfaces, &surfacesLen, 2);
 	while (true)
 	{
 		for (int i = 0; i < surfacesLen; i++)

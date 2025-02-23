@@ -14,8 +14,8 @@ void initSphere(Vector** points, int* pointsLen, int*** surfaces, int* surfacesL
 	{
 		for (int c = 0; c < detail; c++)
 		{
-			float i = (float)b / detail * PI * 2;
-			float j = (float)c / detail * PI * 2;
+			float i = (float)(PI * 2 * b / detail);
+			float j = (float)(PI * 2 * c / detail);
 			Vector p = { radius * cos(i) * sin(j), radius * sin(i) * sin(j), radius * cos(j) };
 			(*points)[b * detail + c] = p;
 		}

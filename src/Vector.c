@@ -1,8 +1,6 @@
 #include "Vector.h"
 #include <math.h>
 
-typedef Vector;
-
 Vector createVector(double x, double y, double z)
 {
 	Vector v = { x, y, z };

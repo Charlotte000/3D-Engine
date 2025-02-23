@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int _getLength(FILE* file, int* pointsLen, int* surfacesLen)
+void _getLength(FILE* file, int* pointsLen, int* surfacesLen)
 {
 	rewind(file);
 	*pointsLen = 0;
